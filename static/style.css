@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  background-color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+header { font-size: 12px; }
+
+section[role="region"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+}
+
+#options-view {
+  z-index: 10;
+}
+
+#options-view form {
+	margin: 1.5rem;
+}
+
+/* animations */
+.move-down {
+  transform: translateY(100%);
+  transition: all 0.2s;
+}
+
+.move-up {
+  transform: translateY(0);
+  transition: all 0.2s;
+}
