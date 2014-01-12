@@ -17,25 +17,30 @@ $(function() {
 
     // vote confirmation
     var myVote;
+    var $movie;
     var $confirm       = $('#confirm');
     var $confirmCancel = $('#confirm-cancel');
     var $confirmView   = $('#confirm-view');
 
     $confirmCancel.click(function(ev) {
         ev.preventDefault();
+        myVote = undefined;
+        $movie = undefined;
         $confirmView.removeClass('move-up').addClass('move-down');
     });
 
     $confirmView.click(function(ev) {
         ev.preventDefault();
         // here, we would perform a request to /vote/<user_id>/<movie_id> using myVote and myUserId
+        $movie.find('aside').removeClass('contacts-addfavorite').addClass('contacts-favorite');
         $confirmView.removeClass('move-up').addClass('move-down');
     });
 
     function vote(ev) {
         ev.preventDefault();
         console.log('movie_id=' + $(this).data('movie-id'));
-        myVote = $(this).data('movie-id');
+        $movie = $(this);
+        myVote = $movie.data('movie-id');
         $confirmView.removeClass('move-down').addClass('move-up');
     }
 

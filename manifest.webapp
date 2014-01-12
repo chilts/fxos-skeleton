@@ -1,1 +1,5 @@
-{}
+{
+  "name": "movie-night",
+  "description": "Voting for movies for Friday Night.",
+  "launch_path": "/index.html"
+}
