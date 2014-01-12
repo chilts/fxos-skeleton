@@ -43,7 +43,8 @@ $(function() {
         console.log('movie_id=' + $(this).data('movie-id'));
         $movie = $(this);
         myVote = $movie.data('movie-id');
-        $confirmView.removeClass('move-down').addClass('move-up');
+        // ToDo: remove 'move-down' class from $confirmView
+        // ToDo: add 'move-up' class to $confirmView
     }
 
     $('#appList a').click(vote);
