@@ -64,8 +64,8 @@ $(function() {
             var $a = $('<a href="#">');
             $a.data('movie-id', movie.movie_id);
             $a.append('<aside class="icon comms-icon contacts-addfavorite">vote</aside>');
-            $a.append($('<p>').text(movie.title + ' asd'));
-            $a.append($('<p>').text(movie.genre + ' sdf'));
+            $a.append($('<p>').text(movie.title));
+            $a.append($('<p>').text(movie.genre));
             $a.click(vote);
             $li.append($a);
             $list.append($li);
