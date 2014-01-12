@@ -24,8 +24,8 @@ section[role="region"] {
   background: #fff;
 }
 
-#options-view {
-  z-index: 10;
+#options-view, #confirm-view {
+  z-index: 1000;
 }
 
 #options-view form {

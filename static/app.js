@@ -29,7 +29,7 @@ $(function() {
         $confirmView.removeClass('move-up').addClass('move-down');
     });
 
-    $confirmView.click(function(ev) {
+    $confirm.click(function(ev) {
         ev.preventDefault();
         // here, we would perform a request to /vote/<user_id>/<movie_id> using myVote and myUserId
         $movie.find('aside').removeClass('contacts-addfavorite').addClass('contacts-favorite');
