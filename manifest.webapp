@@ -1,5 +1,9 @@
 {
   "name": "Friday Night Movie",
   "description": "Voting for movies for Friday Night.",
-  "launch_path": "/index.html"
+  "launch_path": "/index.html",
+  "type": "privileged",
+  "permissions": {
+    "systemXHR": {}
+  }
 }
