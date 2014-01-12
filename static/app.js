@@ -52,14 +52,14 @@ $(function() {
     // do an Ajax request to get the movies
     var jqxhr = $.ajax({
         type     : 'GET',
-        url      : 'movies.json',
+        url      : 'http://localhost:8000/movies',
         dataType : 'json'
     });
 
     jqxhr.done(function(data) {
         var $list = $('#appList ul');
         $list.empty();
-        data.forEach(function(movie) {
+        data.movies.forEach(function(movie) {
             var $li = $('<li>');
             var $a = $('<a href="#">');
             $a.data('movie-id', movie.movie_id);
