@@ -26,14 +26,16 @@ $(function() {
         ev.preventDefault();
         myVote = undefined;
         $movie = undefined;
-        $confirmView.removeClass('move-up').addClass('move-down');
+        // ToDo: remove 'move-up' class from $confirmView
+        // ToDo: add 'move-down' class to $confirmView
     });
 
     $confirm.click(function(ev) {
         ev.preventDefault();
         // here, we would perform a request to /vote/<user_id>/<movie_id> using myVote and myUserId
         $movie.find('aside').removeClass('contacts-addfavorite').addClass('contacts-favorite');
-        $confirmView.removeClass('move-up').addClass('move-down');
+        // ToDo: remove 'move-up' class from $confirmView
+        // ToDo: add 'move-down' class to $confirmView
     });
 
     function vote(ev) {
