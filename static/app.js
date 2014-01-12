@@ -65,7 +65,7 @@ $(function() {
             $a.data('movie-id', movie.movie_id);
             $a.append('<aside class="icon comms-icon contacts-addfavorite">vote</aside>');
             $a.append($('<p>').text(movie.title));
-            $a.append($('<p>').text(movie.genre));
+            // ToDo: add the movie genre to the movie item
             $a.click(vote);
             $li.append($a);
             $list.append($li);
